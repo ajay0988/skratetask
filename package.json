@@ -1,0 +1,24 @@
+{
+  "name": "skratetask",
+  "version": "1.0.0",
+  "description": "This is Home Assignment for backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajay0988/skratetask.git"
+  },
+  "author": "131ajay0@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajay0988/skratetask/issues"
+  },
+  "homepage": "https://github.com/ajay0988/skratetask#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.2"
+  }
+}
