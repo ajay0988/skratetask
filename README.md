@@ -33,7 +33,7 @@ http://3.108.55.92:4000
 
 5. dotenv
 ```bash
-  Using this , we can manage the env variables in node application.
+  Using this , we can manage the env variables in node application. It is work like secret file
 ```
 
 ## API's 
@@ -42,7 +42,13 @@ http://3.108.55.92:4000
 
 ```http
   POST /users/new
-  In request body you have pass object like {"username":"value"}
+  request body 
+  {"username":"value"}
+  Note:- Value must be grater than or equal than 6
+  response body 
+  {
+  "UID": "id of user after successfully creation"
+  }
 ```
 
 #### Get all Users
@@ -50,12 +56,36 @@ http://3.108.55.92:4000
 ```http
   GET /users/all
   
+   response body 
+  {
+  "users": [
+        {
+            "_id": "61bb980742411127cd7f169f",
+            "username": "ajaykumar1234"
+        },
+        {
+            "_id": "61bb984d42411127cd7f16a1",
+            "username": "abhimanyukumar"
+        },
+  }
 ```
 #### Create a meeting
 
 ```http
   POST /meetings/new
-  request Body look like {"uid1": "id of first user","uid2":"id of 2nd user","date":"17-12-2021"}
+  request Body 
+  {
+  "uid1": "id of first user",
+  "uid2":"id of 2nd user",
+  "date":"17-12-2021"
+  }
+  
+  response body 
+  {
+  "UID": "Id of meeting"
+  }
+  
+  
 ```
 #### Get All meetings
 
